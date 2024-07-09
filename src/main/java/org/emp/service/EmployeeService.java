@@ -15,4 +15,5 @@ public interface EmployeeService {
 
     Employee findById(Long id);
 
+    Employee findByFirstName(String firstName);
 }

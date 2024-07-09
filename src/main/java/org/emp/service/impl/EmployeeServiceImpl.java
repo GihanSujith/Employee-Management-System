@@ -16,6 +16,11 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class EmployeeServiceImpl implements EmployeeService {
     @Override
+    public Employee findByFirstName(String firstName) {
+        return new ObjectMapper().convertValue(repository.findByFirstName(firstName), Employee.class);
+    }
+
+    @Override
     public Employee findById(Long id) {
         if (repository.findById(id).isPresent()){
             Optional<EmployeeEntity> byId = repository.findById(id);
