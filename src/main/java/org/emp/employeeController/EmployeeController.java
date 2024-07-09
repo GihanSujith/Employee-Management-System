@@ -2,10 +2,7 @@ package org.emp.employeeController;
 
 
 import org.emp.dto.Employee;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,5 +14,9 @@ public class EmployeeController {
     @PostMapping("add-employee")
     public void addEmployee(@RequestBody Employee employee){
         employeeList.add(employee);
+    }
+    @GetMapping("get-all")
+    public List<Employee> getAlll(){
+        return employeeList;
     }
 }
