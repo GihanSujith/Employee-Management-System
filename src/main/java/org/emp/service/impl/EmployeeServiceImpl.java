@@ -15,6 +15,13 @@ import java.util.List;
 @RequiredArgsConstructor
 public class EmployeeServiceImpl implements EmployeeService {
     @Override
+    public void updateEmployee(Employee employee) {
+        if (repository.findById(employee.getId()).isPresent()){
+            repository.save(new ObjectMapper().convertValue(employee, EmployeeEntity.class));
+        }
+    }
+
+    @Override
     public void deleteEmployeeById(Long id) {
         if (repository.existsById(id)){
             repository.deleteById(id);
