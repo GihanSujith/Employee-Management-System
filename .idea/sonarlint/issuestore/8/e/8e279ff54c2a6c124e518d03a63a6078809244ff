@@ -1,8 +1,2 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‡Àö»8ŽÑÆ±‰2J$6a0d579c-2306-4c73-bf56-6013a485af2c
-g
-java:S1128"ERemove this unused import 'org.emp.service.impl.EmployeeServiceImpl'.(»çºØøÿÿÿÿ8²§¼²‰2
-u
-java:S1128	"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡ž¸Îùÿÿÿÿ8²§¼²‰2
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8²§¼²‰2
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‡Àö»8ŽÑÆ±‰2J$07291080-1a56-4c18-9824-333601f9818a
