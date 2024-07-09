@@ -1,3 +1,5 @@
 
+
+java:S3655"HCall "byId.isPresent()" or "!byId.isEmpty()" before accessing the value.(µ›«èúÿÿÿÿ8Ì’áµ‰2J$f2aa0a5e-d245-4bf2-a911-0881d4596cbf
 t
-java:S1602*",Remove useless curly braces around statement(âîï¥ÿÿÿÿÿ8õŞ´‰2J$42dcc55b-6b0f-48d7-90f8-c89b776287ee
+java:S16024",Remove useless curly braces around statement(âîï¥ÿÿÿÿÿ8æ’áµ‰2J$f5046a97-d4aa-4e19-afc5-5f4bf306144d

@@ -10,10 +10,20 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
 public class EmployeeServiceImpl implements EmployeeService {
+    @Override
+    public Employee findById(Long id) {
+        if (repository.findById(id).isPresent()){
+            Optional<EmployeeEntity> byId = repository.findById(id);
+            return new ObjectMapper().convertValue(byId.get(), Employee.class);
+        }
+        return new Employee();
+    }
+
     @Override
     public void updateEmployee(Employee employee) {
         if (repository.findById(employee.getId()).isPresent()){
